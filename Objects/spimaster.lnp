@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\spimaster.o"
+--strict --scatter ".\Objects\spimaster.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\spimaster.map" -o .\Objects\spimaster.axf
